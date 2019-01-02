@@ -37,6 +37,8 @@ public class HomeFragment extends Fragment {
                 loadBreakfast();
                 Appetizer();
                 Soup();
+                flower();
+                car();
             } else if (id.equals("1")) {
                 loadBreakfast();
             } else if (id.equals("2")) {
@@ -157,4 +159,31 @@ public class HomeFragment extends Fragment {
         data.add(da);
     }
 
+    public void flower() {
+        ProductModel da = new ProductModel();
+        da.setId("1");
+        da.setName("Rose");
+        da.setImagePath("https://images-na.ssl-images-amazon.com/images/I/51D4tIXLo2L._SX425_.jpg");
+        data.add(da);
+
+        da = new ProductModel();
+        da.setId("1");
+        da.setName("Lotus");
+        da.setImagePath("https://www.treetopzencenter.org/wp-content/uploads/2010/05/5e94067f43eafbd7cb097cf08ecaa72e_the-leaves-of-a-lotus-flower-lotus_1024-680.jpeg");
+        data.add(da);
+    }
+
+    public void car() {
+        ProductModel da = new ProductModel();
+        da.setId("1");
+        da.setName("Pourche");
+        da.setImagePath("https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/body-image/public/porsche-911_1.jpg");
+        data.add(da);
+
+        da = new ProductModel();
+        da.setId("1");
+        da.setName("Odd");
+        da.setImagePath("https://car-images.bauersecure.com/pagefiles/79892/1040x585/electric_car_14.jpg");
+        data.add(da);
+    }
 }
