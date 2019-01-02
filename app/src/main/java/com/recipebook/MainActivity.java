@@ -105,6 +105,9 @@ public class MainActivity extends AppCompatActivity
             Bundle bundle = new Bundle();
             bundle.putString("id", "3");
             fragment.setArguments(bundle);
+        } else if (id == R.id.nav_search) {
+            Intent intent = new Intent(MainActivity.this, SearchActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_share) {
             fragment = new TabFragment();
         } else if (id == R.id.nav_send) {

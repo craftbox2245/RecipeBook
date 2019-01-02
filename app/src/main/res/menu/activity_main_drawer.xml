@@ -20,6 +20,10 @@
             android:id="@+id/nav_soups"
             android:icon="@drawable/soups"
             android:title="Soups" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search_white_24dp"
+            android:title="Search Activity" />
     </group>
 
     <item android:title="Communicate">
