@@ -24,7 +24,14 @@
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MultiLayoutActivity" />
-        <activity android:name=".SearchActivity"></activity>
+        <activity android:name=".SearchActivity" />
+        <activity
+            android:name=".WallpaperBoardPreviewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:resizeableActivity="false"
+            android:theme="@style/WallpaperTheme"></activity>
     </application>
 
 </manifest>
