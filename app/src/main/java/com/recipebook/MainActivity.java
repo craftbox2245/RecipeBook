@@ -108,6 +108,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_search) {
             Intent intent = new Intent(MainActivity.this, SearchActivity.class);
             startActivity(intent);
+        } else if (id == R.id.nav_viewpager) {
+            Intent intent = new Intent(MainActivity.this, ViewPagerActvity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_share) {
             fragment = new TabFragment();
         } else if (id == R.id.nav_send) {

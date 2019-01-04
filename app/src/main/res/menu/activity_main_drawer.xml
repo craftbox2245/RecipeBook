@@ -24,6 +24,11 @@
             android:id="@+id/nav_search"
             android:icon="@drawable/ic_search_white_24dp"
             android:title="Search Activity" />
+
+        <item
+            android:id="@+id/nav_viewpager"
+            android:icon="@drawable/ic_search_white_24dp"
+            android:title="Viewpager Activity" />
     </group>
 
     <item android:title="Communicate">

@@ -70,6 +70,9 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
                         .build();
                 imageLoader.displayImage(data.get(position).getImage_path(), holder.listHomeImg, options);
             }
+
+
+
         } catch (Exception e) {
             e.printStackTrace();
         }

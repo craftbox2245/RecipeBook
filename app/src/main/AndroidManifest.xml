@@ -31,7 +31,8 @@
             android:exported="true"
             android:launchMode="singleTop"
             android:resizeableActivity="false"
-            android:theme="@style/WallpaperTheme"></activity>
+            android:theme="@style/WallpaperTheme" />
+        <activity android:name=".ViewPagerActvity"></activity>
     </application>
 
 </manifest>

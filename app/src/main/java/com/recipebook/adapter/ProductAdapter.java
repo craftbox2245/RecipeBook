@@ -1,6 +1,5 @@
 package com.recipebook.adapter;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -15,16 +14,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.danimahardhika.android.helpers.core.ColorHelper;
 import com.kogitune.activitytransition.ActivityTransitionLauncher;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.imageaware.ImageViewAware;
 import com.nostra13.universalimageloader.core.listener.SimpleImageLoadingListener;
-import com.recipebook.MainActivity;
 import com.recipebook.R;
 import com.recipebook.WallpaperBoardPreviewActivity;
 import com.recipebook.model.ProductModel;
