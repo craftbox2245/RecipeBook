@@ -111,6 +111,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_viewpager) {
             Intent intent = new Intent(MainActivity.this, ViewPagerActvity.class);
             startActivity(intent);
+        } else if (id == R.id.nav_random) {
+            Intent intent = new Intent(MainActivity.this, RandomImageActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_share) {
             fragment = new TabFragment();
         } else if (id == R.id.nav_send) {

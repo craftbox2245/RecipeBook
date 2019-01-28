@@ -29,6 +29,11 @@
             android:id="@+id/nav_viewpager"
             android:icon="@drawable/ic_search_white_24dp"
             android:title="Viewpager Activity" />
+
+        <item
+            android:id="@+id/nav_random"
+            android:icon="@drawable/ic_search_white_24dp"
+            android:title="Random Image" />
     </group>
 
     <item android:title="Communicate">

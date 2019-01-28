@@ -33,7 +33,8 @@
             android:resizeableActivity="false"
             android:theme="@style/WallpaperTheme" />
         <activity android:name=".ViewPagerActvity" />
-        <activity android:name=".MultiSelectionSpinnerActivity"></activity>
+        <activity android:name=".MultiSelectionSpinnerActivity" />
+        <activity android:name=".RandomImageActivity"></activity>
     </application>
 
 </manifest>
