@@ -41,6 +41,11 @@
                 android:id="@+id/nav_send"
                 android:icon="@drawable/ic_menu_send"
                 android:title="MultiLayout Activity" />
+
+            <item
+                android:id="@+id/nav_multi_spinner"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Multiselection spinner" />
         </menu>
     </item>
 

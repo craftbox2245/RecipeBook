@@ -116,6 +116,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_send) {
             Intent intent = new Intent(MainActivity.this, MultiLayoutActivity.class);
             startActivity(intent);
+        }else if (id == R.id.nav_multi_spinner) {
+            Intent intent = new Intent(MainActivity.this, MultiSelectionSpinnerActivity.class);
+            startActivity(intent);
         }
 
         if (fragment != null) {
