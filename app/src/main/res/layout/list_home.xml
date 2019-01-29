@@ -12,8 +12,8 @@
             android:id="@+id/list_home_img"
             android:layout_width="fill_parent"
             android:layout_height="192.0dip"
-            android:scaleType="centerCrop"
             android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
             android:src="@mipmap/ic_launcher" />
 
         <LinearLayout
@@ -22,19 +22,20 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:background="#70000000">
+
             <TextView
                 android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
-                android:text="Test"
                 android:gravity="center"
-                android:paddingTop="15dp"
                 android:paddingBottom="15dp"
-                android:textColor="#fff"/>
+                android:paddingTop="15dp"
+                android:text="Test"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
         </LinearLayout>
 
     </FrameLayout>
-
 
 </LinearLayout>

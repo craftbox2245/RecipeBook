@@ -4,6 +4,7 @@ package com.recipebook.fragment;
  * Created by Hardip on 24/12/2018.
  */
 
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
@@ -11,9 +12,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.recipebook.R;
 import com.recipebook.adapter.ProductAdapter;
+import com.recipebook.custom.EqualSpacingItemDecoration;
 import com.recipebook.custom.SpacesItemDecoration;
 import com.recipebook.model.ProductModel;
 
@@ -51,15 +54,24 @@ public class HomeFragment extends Fragment {
         }
 
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getActivity(), 2);
-        int spanCount = 2; // 3 columns
-        int spacing = 5; // 50px
-        boolean includeEdge = false;
-        recycleView.addItemDecoration(new SpacesItemDecoration(spanCount, spacing, includeEdge));
+        recycleView.addItemDecoration(new EqualSpacingItemDecoration(10));
         ProductAdapter itemListDataAdapter = new ProductAdapter(getActivity(), data);
         recycleView.setLayoutManager(layoutManager);
         recycleView.setAdapter(itemListDataAdapter);
         // Inflate the layout for this fragment
         return rootView;
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        if (newConfig.orientation == Configuration.ORIENTATION_PORTRAIT) {
+            RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getActivity(), 2);
+            recycleView.setLayoutManager(layoutManager);
+        } else if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getActivity(), 4);
+            recycleView.setLayoutManager(layoutManager);
+        }
     }
 
     public void loadBreakfast() {

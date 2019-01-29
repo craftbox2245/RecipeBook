@@ -105,10 +105,9 @@ public class SwipToDeleteActivity extends AppCompatActivity {
                                 @Override
                                 public void onDismiss(RecyclerViewAdapter view, int position) {
                                     data.remove(position);
-                                    recycleView.removeViewAt(position);
                                     adapter.notifyItemRemoved(position);
                                     adapter.notifyItemRangeChanged(position, data.size());
-                                    adapter.notifyDataSetChanged();
+                                   // adapter.notifyDataSetChanged();
                                 }
                             });
 
