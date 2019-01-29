@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#fff">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#E6E6E6">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycleView"
@@ -11,6 +12,7 @@
         android:clipToPadding="false"
         android:paddingLeft="2dp"
         android:paddingRight="2dp"
-        android:paddingTop="2dp"></android.support.v7.widget.RecyclerView>
+        android:paddingTop="2dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"></android.support.v7.widget.RecyclerView>
 
-</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
