@@ -49,7 +49,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.ViewHolder> {
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View vi = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_multi_home, null);
+        View vi = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_multi_home, parent,false);
         return new ViewHolder(vi);
     }
 

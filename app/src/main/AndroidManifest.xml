@@ -34,7 +34,8 @@
             android:theme="@style/WallpaperTheme" />
         <activity android:name=".ViewPagerActvity" />
         <activity android:name=".MultiSelectionSpinnerActivity" />
-        <activity android:name=".RandomImageActivity"></activity>
+        <activity android:name=".RandomImageActivity" />
+        <activity android:name=".SwipToDeleteActivity"></activity>
     </application>
 
 </manifest>

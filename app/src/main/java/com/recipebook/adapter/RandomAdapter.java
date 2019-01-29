@@ -43,7 +43,7 @@ public class RandomAdapter extends RecyclerView.Adapter<RandomAdapter.ViewHolder
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View vi = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_random, null);
+        View vi = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_random, parent,false);
         return new ViewHolder(vi);
     }
 

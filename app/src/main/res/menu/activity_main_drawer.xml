@@ -34,6 +34,11 @@
             android:id="@+id/nav_random"
             android:icon="@drawable/ic_search_white_24dp"
             android:title="Random Image" />
+        <item
+            android:id="@+id/nav_swip_to_delete"
+            android:icon="@drawable/ic_search_white_24dp"
+            android:title="Swipe To Delete" />
+
     </group>
 
     <item android:title="Communicate">

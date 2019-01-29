@@ -74,8 +74,7 @@ public class RandomImageActivity extends AppCompatActivity implements RandomAdap
                 if (data.get(i).isSelected()) {
                     count++;
                     data.get(i).setCount("" + count);
-                }
-                else{
+                } else {
                     data.get(i).setCount("");
                 }
             }

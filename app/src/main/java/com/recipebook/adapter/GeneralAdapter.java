@@ -44,7 +44,7 @@ public class GeneralAdapter extends RecyclerView.Adapter<GeneralAdapter.ViewHold
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View vi = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_general, null);
+        View vi = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_general, parent,false);
         return new ViewHolder(vi);
     }
 
