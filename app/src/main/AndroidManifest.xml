@@ -4,6 +4,12 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -36,7 +42,8 @@
         <activity android:name=".ViewPagerActvity" />
         <activity android:name=".MultiSelectionSpinnerActivity" />
         <activity android:name=".RandomImageActivity" />
-        <activity android:name=".SwipToDeleteActivity"></activity>
+        <activity android:name=".SwipToDeleteActivity" />
+        <activity android:name=".BarcodeActivity"></activity>
     </application>
 
 </manifest>

@@ -38,6 +38,10 @@
             android:id="@+id/nav_swip_to_delete"
             android:icon="@drawable/ic_search_white_24dp"
             android:title="Swipe To Delete" />
+        <item
+            android:id="@+id/nav_barcode"
+            android:icon="@drawable/ic_search_white_24dp"
+            android:title="Barcode Scan" />
 
     </group>
 

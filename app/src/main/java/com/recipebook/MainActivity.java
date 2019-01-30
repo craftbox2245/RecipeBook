@@ -117,6 +117,9 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_swip_to_delete) {
             Intent intent = new Intent(MainActivity.this, SwipToDeleteActivity.class);
             startActivity(intent);
+        }else if (id == R.id.nav_barcode) {
+            Intent intent = new Intent(MainActivity.this, BarcodeActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_share) {
             fragment = new TabFragment();
         } else if (id == R.id.nav_send) {
