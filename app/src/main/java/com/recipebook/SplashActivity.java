@@ -35,6 +35,21 @@ public class SplashActivity extends RuntimePermissionsActivity {
             Intent intent = new Intent(SplashActivity.this, MainActivity.class);
             startActivity(intent);
             finish();
+			
+			/*try {
+                        FirebaseApp.initializeApp(LoginActivity.this);
+                        FirebaseInstanceId.getInstance().getInstanceId()
+                                .addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<InstanceIdResult> task) {
+// Get new Instance ID token
+                                        String token = task.getResult().getToken();
+// Toast.makeText(LoginActivity.this, token, Toast.LENGTH_SHORT).show();
+                                    }
+                                });
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }*/
         }
     }
 }
